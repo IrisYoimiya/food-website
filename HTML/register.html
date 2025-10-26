@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="../CSS/register.css" />
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="form-container">
+        <div id="title">Register Form</div>
+        <form action="" id="register-form" onsubmit="validation(event)">
+          <label for="name">Nama</label>
+          <input type="text" name="name" id="name" class="inputted" placeholder="Masukan Nama" />
+          <label for="dob">Tanggal Lahir</label>
+          <input type="date" name="dob" id="dob" class="inputted" />
+          <label for="pass">Alamat</label>
+          <input type="text" name="pass" id="alamat" class="inputted" placeholder="Masukan Alamat" />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" class="inputted" placeholder="Masukan Email" />
+          <label for="gender">Gender</label>
+          <div id="gender-container">
+            <div class="radio-container">
+              <input type="radio" name="gender" id="male" value="male" />
+              <span id="desc">Male</span>
+            </div>
+            <div class="radio-container">
+              <input type="radio" name="gender" id="female" value="female" />
+              <span id="desc">Female</span>
+            </div>
+          </div>
+          <div id="error-line">Error Line</div>
+          <button type="submit" id="bttn-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="../JavaScript/register.js"></script>
+  </body>
+</html>

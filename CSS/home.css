@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../immage/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: tomato;
+  align-items: center;
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  background-color: #fefefe;
+  text-align: center;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+}
+
+.nav .register {
+  margin-right: 100px;
+}
+
+.nav .logo {
+  margin-left: 100px;
+}
+
+.nav .menu {
+  margin-left: 15px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+}
+
+.register button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(214, 9, 204);
+}
+
+.menu-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding-left: 10%;
+}
+
+.menu-section .img {
+  height: 70%;
+  width: 70%;
+}
+
+.menu-section button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(214, 9, 204);
+  margin-top: 25px;
+}
+
+.card {
+  min-height: 100vh;
+  background: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card h1 {
+  align-items: center;
+  text-align: center;
+}
+
+.card .menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card .menu .box {
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  background: #feeee7;
+  padding: 40px;
+  border-radius: 0.5rem;
+  margin: 10px;
+}
+
+.img-box {
+  width: 200px;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.img-box img {
+  width: 100%;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.card .menu .box .deskripsi {
+  margin-top: 20px;
+}
+
+.footer {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1 1 calc(33.333% - 40px);
+  margin: 10px;
+  margin-bottom: 5px;
+}
+
+.footer-section h2 {
+  margin-top: 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: left;
+}
+
+.footer-section ul li a:hover {
+  color: #ddd;
+}
+
+.footer-bottom {
+  margin-top: 5px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+.footer p {
+  font-size: 12px;
+}
+
+.footer li {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-section .desk {
+    font-size: 1em;
+  }
+
+  .menu-section .img img {
+    width: 70%;
+    margin-bottom: 50px;
+  }
+
+  .menu-section {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    /* margin-bottom: 50px;
+    padding-bottom: 50px; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .nav {
+    margin-top: 0;
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu,
+  .register {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-right: 50px;
+  }
+
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+  }
+
+  .hamburger-menu .menu,
+  .hamburger-menu .register {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hamburger-menu a {
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+  }
+  .nav .logo {
+    margin-left: 50px;
+  }
+}
